@@ -3,7 +3,7 @@ import { PrismaClient } from '@prisma/client'
 const prismaClientSingleton = () => {
   return new PrismaClient()
 }
-
+# db changes
 declare global {
   var prismaGlobal: undefined | ReturnType<typeof prismaClientSingleton>
 }
